@@ -1,17 +1,13 @@
 """
 Canonical Experiment 3 runner: conditional generation on the 2D coupled double-well.
 
-This consolidates the previous "run_exp3.py" and "run_exp3_improved.py" scripts into
-one entry point. It reports:
+It reports:
 
 - learned-score proposal variants (the current implementation setup)
 - exact-drift proposal variants where the exact Langevin transition is available
 - three Take 3 twist objectives: MC, TD, and Lemma-3 KL
 - pooled-particle and per-trial reconstruction MSE
 
-The learned-score backend still reflects the reverse-SDE approximation used in the
-paper draft, so the JSON records both the true-dynamics and learned-proposal
-normalizing-constant references to make the comparison explicit.
 """
 
 import os
