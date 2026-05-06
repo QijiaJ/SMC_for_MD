@@ -1,10 +1,6 @@
 """
 Updated Experiment 4: single-stage vs two-stage Take 2.
 
-Fixes relative to the original script:
-- Learned twists are trained as positive psi_t and only logged at evaluation.
-- The 2D upsampling twist uses future-only observation rewards, consistent with
-  the separate log_G + log_twist decomposition in SMC.
 """
 
 import os
