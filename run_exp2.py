@@ -1,11 +1,6 @@
 """
 Updated Experiment 2: 2D Muller-Brown barrier crossing.
 
-Fixes relative to the original script:
-- Tweedie rollouts now use the full future checkpoint reward, not endpoint only.
-- Factorized rewards cache only the future twist term, not log_G + log_twist.
-- Take 3 learns positive psi_t in linear space and uses log psi inside SMC.
-- All twisted methods include psi_0 in log Z if they divide by psi_0.
 """
 
 import os
