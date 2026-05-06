@@ -1,12 +1,6 @@
 """
 Updated Experiment 1: 1D double-well with corrected twist handling.
 
-Fixes relative to the original script:
-- Take 3 learns positive psi_t in linear space and is converted to log psi only
-  when inserted into SMC weights.
-- All twisted methods add psi_0 back into log Z if psi_0 is used as the initial
-  cached denominator.
-- Only the future twist term is cached between steps.
 """
 
 import os
