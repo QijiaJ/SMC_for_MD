@@ -1,8 +1,5 @@
 # Reproducibility Code
 
-This directory contains the experiment code and retained result artifacts used in
-the final draft.
-
 ## Synthetic Experiments
 
 - `run_exp1.py`: 1D sanity check reported in Appendix C.
@@ -19,7 +16,6 @@ the final draft.
 - `run_exp5_alanine_rarity_sweep.py`: alanine harder-task sweep summarized in Appendix C.
 - `run_exp6_tetrapeptide_tps.py`: tetrapeptide transfer TPS benchmark.
 - `summarize_exp6_transfer.py`: aggregates the three reported tetrapeptide seeds.
-- `make_biophysics_figures.py`: regenerates the reported alanine Ramachandran triptych after `run_exp5_alanine.py` has produced the source panels.
 
 ## Shared Modules
 
@@ -37,12 +33,4 @@ the final draft.
 - Alanine uses `alanine-dipeptide-3x250ns-backbone-dihedrals.npz`.
 - Tetrapeptide uses preprocessed torsion files under `../data/tetrapeptide_npz_4AA_test_50/` and the split CSV `4AA_test.csv`.
 
-## Regenerating Tables and Figures
 
-```bash
-python updated_code/make_paper_tables.py
-python updated_code/make_biophysics_figures.py
-```
-
-The retained result JSON/PDF artifacts are listed in
-`updated_code/results/RESULTS_MANIFEST.md`.
