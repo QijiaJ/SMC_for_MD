@@ -2,8 +2,7 @@
 Preset sweep for Experiment 5 (alanine dipeptide).
 
 This runner wraps `run_exp5_alanine.py` with a small family of increasingly
-rare midpoint+endpoint tasks so we can pick a paper-facing setting where
-Bootstrap starts to degrade but Take 3 still has support.
+rare midpoint+endpoint tasks.
 """
 
 import argparse
