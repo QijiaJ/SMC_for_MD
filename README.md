@@ -1,4 +1,4 @@
-# Reproducibility Code
+# Reproducible Code
 
 ## Synthetic Experiments
 
